@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | QR code component</title>
@@ -12,18 +14,66 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(212, 45%, 89%);
+    }
+
+    .container {
+      width: 298px;
+      padding: 16px 16px 40px 16px;
+      height: max-content;
+      border-radius: 20px;
+      background-color: white;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .text {
+      font-family: outfit;
+      margin: 24px 0 0 0;
+      padding: 0 16px 0 16px;
+      text-align: center;
+    }
+
+    .text-1 {
+      width: 256px;
+      height: 52px;
+      line-height: 120%;
+      font-size: 22px;
+      font-weight: bold;
+      color: hsl(218, 44%, 22%);
+      letter-spacing: 0;
+      margin-bottom: 16px;
+    }
+
+    .text-2 {
+      line-height: 140%;
+      color: hsl(216, 15%, 48%);
+      font-size: 15px;
+      width: 256px;
+      height: 53;
+      margin-top: 0;
+      letter-spacing: 0.2px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <img src="./images/image-qr-code.png" alt="qr code">
+    <div class="text">
+      <p class="text-1">Improve your front-end skills by building project</p>
+      <p class="text-2">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level<p>
+    </div>
   </div>
-  Improve your front-end skills by building project
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
 </body>
 </html>
