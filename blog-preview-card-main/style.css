@@ -1,0 +1,87 @@
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+* {
+    margin: 0;
+    color: hsl(0, 0%, 7%);
+}
+
+body {
+    font-family: figtree;
+    margin: 0;
+    height: 100vh;
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.preview-card {
+    border-radius: 1.25rem;
+    height: 522px;
+    background-color: white;
+    max-width: 336px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 1.5rem 0 1.5rem;
+    box-shadow: .5rem .5rem hsl(0, 0%, 7%);
+}
+
+.content {
+    letter-spacing: 0px;
+    line-height: 150%;
+    height: 12.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button {
+    width: max-content;
+    border: none;
+    padding: .25rem .75rem .25rem .75rem;
+    border-radius: .25rem;
+    background-color: hsl(47, 88%, 63%);
+    font-size: 0.875rem;
+    font-weight: 800;
+}
+
+.publish-date {
+    font-size: 0.875rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.title:hover {
+    cursor: pointer;
+    color: hsl(47, 88%, 63%);
+}
+
+.description {
+    color: hsl(0, 0%, 42%);
+}
+
+.author {
+    display: flex;
+    height: 2rem;
+    width: 8.0625rem;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+.author img {
+    height: 100%;
+}
