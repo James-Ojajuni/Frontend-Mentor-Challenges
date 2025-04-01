@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5rem 8rem 5rem 8rem;
+    gap: 4rem;
+}
+
+header {
+    max-width:85rem;
+    text-align: center;
+}
+
+.title-1 {    
+    color: hsl(234, 12%, 34%);
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.title-2 {
+    color: hsl(234, 12%, 34%);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.title-3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(234, 12%, 34%);
+    max-width: 500px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr) ;
+    width: 100%;
+    gap: 1.5rem; 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 12px 13px rgba(0, 0, 0, 0.103);
+    border-end-end-radius: .5rem;
+    border-end-start-radius: .5rem;
+    padding: 0 0 2.5rem 0;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 0 2rem;
+}
+
+img {
+    align-self: flex-end;
+}
+
+.color-code {
+    height: 3.5px;
+    margin-block-end: 2rem;
+    border-start-start-radius: 20rem;
+    border-start-end-radius: 20rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+
+.card-description {
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(212, 6%, 44%);
+    margin-block-end: 2rem;
+}
+
+.supervisor {
+    grid-area: 2/1/4/2;
+}
+
+.team-builder {
+    grid-area: 1/2/3/3;
+}
+
+.calculator {
+    grid-area: 2/-2/4/-1;
+}
+
+.karma {
+    grid-area: 3/2/5/3;
+}
+
+.cyan {
+    background-color: hsl(180, 62%, 55%);
+}
+
+.red {
+    background-color: hsl(0, 78%, 62%);
+}
+
+.blue {
+    background-color: hsl(212, 86%, 64%);
+}
+
+.orange {
+    background-color: hsl(34, 97%, 64%);
+}
+
+@media  (width <= 600px) {
+    body {
+        padding: 8rem 2rem 4rem 2rem;
+    }
+
+    .title-1 {
+        font-size: max(6dvw,1.5rem);
+    }
+    
+    .title-2 {
+        font-size: max(6dvw,1.5rem);
+    }
+    
+    .title-3 {
+        font-size: 15px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1.5rem; 
+    }
+}
+
+@media screen and (max-width: 1291px) {
+    body {
+        padding: 8rem 1.5rem 4rem 1.5rem;
+    }   
+}
+
+
+ @media (min-width: 501px) and (max-width:900px) {
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr) ;
+        width: 100%;
+        gap: 1.5rem; 
+    }
+
+    .supervisor {
+        grid-area: 1/1/2/2;
+    }
+    
+    .team-builder {
+        grid-area: 1/2/1/3;
+    }
+    
+    .calculator {
+        grid-area: 2/2/3/3;
+    }
+    
+    .karma {
+        grid-area: 2/1/3/2;
+    }
+} 
