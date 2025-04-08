@@ -51,10 +51,17 @@ body {
     box-shadow: 20px 40px 15px var(--grey-200);
 }
 
-img {
+img[src*="jpg"] {
     border-radius: 50%;
     width: 2.1875rem;
+}
 
+img[src*="svg"] {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-end: 5rem;
+    width: 6.2rem;
+    z-index: -1;
 }
 
 .summary {
@@ -68,12 +75,14 @@ img {
 }
 
 .daniel {
+    z-index: -2;
+    position: relative;
     grid-area: 1/1/2/3;
     background-color: var(--purple-500);
     color: var(--white);
 }
 
-.daniel img {
+.daniel img[src*="jpg"] {
     border: 2px solid var(--purple-300);
 }
 
@@ -122,6 +131,11 @@ img {
         grid-area: auto;
     }
 
+    
+    img[src*="svg"] {
+        display: none;
+    }
+
     body {
         height: max-content;
         padding: 6rem 0rem;
@@ -157,5 +171,5 @@ img {
     body {
         height: max-content;
         padding: 6rem 0rem;
-    }
+    }  
 }
